@@ -32,3 +32,5 @@ const user: extendedUser = {
   age: 47,
   role: "string",
 };
+
+// type addNumbert
