@@ -25,8 +25,10 @@ const userWithInterface: User2 = {
 // we can exchange interface
 
 interface extendedUser extends User2 {
-  roll: "string";
+  role: "string";
 }
-// const user: extendedUser ={
-
-// }
+const user: extendedUser = {
+  name: "hasan",
+  age: 47,
+  role: "string",
+};
