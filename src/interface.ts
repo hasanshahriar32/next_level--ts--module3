@@ -33,4 +33,11 @@ const user: extendedUser = {
   role: "string",
 };
 
-// type addNumbert
+type addNumberType = (number1: number, number2: number) => number;
+
+const addNumber: addNumberType = (number1, number2) => {
+  return number1 + number2;
+};
+
+
+
