@@ -39,5 +39,23 @@ const addNumber: addNumberType = (number1, number2) => {
   return number1 + number2;
 };
 
+// we can use interface for function type
 
+interface addNumberInterface {
+  (number1: number, number2: number): number;
+}
 
+const addNumber2: addNumberInterface = (number1, number2) => {
+  return number1 + number2;
+};
+
+// we can use interface for array as array is one kind of object
+type rollnumbers = number[];
+const rollNumbers: rollnumbers = [1, 2, 3, 4];
+interface IRollNumbers {
+  [index: number]: number;
+}
+// this is called indexing measure
+const rollNumbers2: IRollNumbers = [1, 2, 3, 4];
+
+// so we are gonna use interface for only object type and for other cases we're gonna use type alias

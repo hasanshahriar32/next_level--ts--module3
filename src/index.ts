@@ -1,2 +1,3 @@
 // import "./assertion";
-import "./interface";
+// import "./interface";
+import "./generic";
