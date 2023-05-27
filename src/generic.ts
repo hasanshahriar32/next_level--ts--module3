@@ -1,5 +1,6 @@
 // generic means making generalize
 type Rollnumbertype = number[];
+// type Rollnumbertype2 = { number; string };
 const rollNumbers3: Rollnumbertype = [44, 45, 46];
 // or
 const rollNumbers5: Array<number> = [44, 45, 46];
@@ -36,3 +37,22 @@ const genericArray2: GenericArray2<string> = ["2", "3", "5"];
 
 // generic function:
 // generic function
+
+type GenericTuple<x, y> = [x, y];
+const relation: GenericTuple<string, string> = ["hasan", "shahriar"];
+
+type NameRollType = {
+  name: string;
+  roll: number;
+};
+
+const student: GenericTuple<NameRollType, string> = [
+  {
+    name: "jaa",
+    roll: 4,
+  },
+  "cr",
+];
+console.log(student);
+
+console.log(typeof student);
