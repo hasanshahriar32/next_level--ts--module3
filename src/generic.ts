@@ -56,3 +56,17 @@ const student: GenericTuple<NameRollType, string> = [
 console.log(student);
 
 console.log(typeof student);
+
+interface RelationWithSalary2 {
+  name: string;
+  salary: number;
+}
+
+const relationWithSalary2: GenericTuple<RelationWithSalary2, string> = [
+  {
+    name: "jaa",
+    salary: 4,
+  },
+  "cr",
+];
+console.log(relationWithSalary2);
